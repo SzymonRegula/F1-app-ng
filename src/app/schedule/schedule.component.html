@@ -1,0 +1,7 @@
+<app-spinner *ngIf="isLoading"></app-spinner>
+<app-error-alert *ngIf="error" [error]="error"></app-error-alert>
+<section *ngIf="!isLoading" class="section-schedule">
+  <div class="cards-grid">
+    <app-round *ngFor="let round of schedule" [round]="round"></app-round>
+  </div>
+</section>

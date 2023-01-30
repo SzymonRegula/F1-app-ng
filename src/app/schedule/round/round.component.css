@@ -1,0 +1,94 @@
+.round-card-link:link,
+.round-card-link:visited {
+  text-decoration: none;
+  color: #111;
+}
+
+.round-card {
+  margin-top: 1rem;
+  position: relative;
+  padding: 1rem 1rem 1rem 0;
+  padding-bottom: 0;
+  border-top: 0.2rem solid #111;
+  border-right: 0.2rem solid #111;
+  border-top-right-radius: 1rem;
+  transition: all 0.2s;
+}
+
+.round-card:hover {
+  margin-top: 0;
+  padding-top: 2rem;
+}
+
+.round-info-list {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 0.5rem;
+  grid-template-columns: 1fr auto;
+  list-style: none;
+}
+
+.round-info-list li:nth-child(2) {
+  border: none;
+}
+
+.round-number {
+  position: absolute;
+  color: var(--main-red-color);
+  font-weight: 500;
+  top: -5%;
+  left: 0;
+  padding-right: 1rem;
+  background: #fff;
+}
+
+.round-date {
+  font-weight: 700;
+  transform: scaleY(50%);
+  line-height: 0.5;
+}
+
+.days {
+  font-size: 5rem;
+}
+
+.month {
+  align-self: flex-start;
+  padding: 0.6rem 0.4rem;
+  border-radius: 0.5rem;
+  background: #111;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.flag {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.flag-img {
+  height: 30px;
+  width: 50px;
+  display: block;
+  object-fit: cover;
+  border: 0.1rem solid #bbb;
+  border-radius: 0.5rem;
+}
+
+.country {
+  border-top: 0.1rem solid #bbb;
+  padding-top: 1rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.race-name {
+  margin-bottom: 0.5rem;
+}
+
+.quali {
+  border-top: 0.1rem solid #bbb;
+  padding-top: 1rem;
+}

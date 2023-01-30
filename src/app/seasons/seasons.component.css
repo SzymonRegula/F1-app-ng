@@ -1,0 +1,13 @@
+.season-select {
+  display: flex;
+  gap: 2rem;
+  width: fit-content;
+  font-size: 4rem;
+  margin-bottom: 6rem;
+  align-items: center;
+}
+
+.seasons {
+  font-size: 3.2rem;
+  width: fit-content;
+}

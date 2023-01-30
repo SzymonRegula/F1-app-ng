@@ -1,0 +1,7 @@
+.footer {
+  min-height: 10rem;
+  width: 100%;
+  margin-top: 10rem;
+
+  background-color: var(--main-dark-color);
+}

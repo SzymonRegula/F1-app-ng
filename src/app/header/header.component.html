@@ -1,0 +1,41 @@
+<header class="header">
+  <div class="header-content container">
+    <a href="/">
+      <img class="logo" src="assets/images/F1-logo.svg" alt="formula 1 logo" />
+    </a>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li>
+          <a
+            class="nav-link schedule"
+            [routerLink]="[
+              this.route.firstChild?.snapshot.params['season'],
+              'schedule'
+            ]"
+            >Schedule</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link standings"
+            [routerLink]="[
+              this.route.firstChild?.snapshot.params['season'],
+              'standings'
+            ]"
+            >Standings</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link drivers"
+            [routerLink]="[
+              this.route.firstChild?.snapshot.params['season'],
+              'drivers'
+            ]"
+            >Drivers</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

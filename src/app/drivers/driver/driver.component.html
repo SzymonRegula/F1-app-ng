@@ -1,0 +1,29 @@
+<a class="driver-card-link" href="{{ driver.Driver.url }}">
+  <div class="driver-card">
+    <ul class="driver-info-list">
+      <div class="driver-name-number">
+        <div>
+          <li class="name">{{ driver.Driver.givenName }}</li>
+          <li class="surname">{{ driver.Driver.familyName }}</li>
+        </div>
+        <li *ngIf="driver.Driver?.permanentNumber" class="driver-number">
+          {{ driver.Driver.permanentNumber }}
+        </li>
+      </div>
+      <li *ngIf="driver.Constructors[0]?.name" class="driver-team">
+        <img class="car-icon" src="assets/images/carIcon.svg" alt="" />
+        <div>{{ driver.Constructors[0]?.name }}</div>
+      </li>
+      <li class="driver-nat">
+        <img class="icon" src="assets/images/homeIcon.svg" alt="" />
+        <div>{{ driver.Driver.nationality }}</div>
+      </li>
+      <li class="birth-date">
+        <img class="icon" src="assets/images/calendarIcon.svg" alt="" />
+        <div>
+          {{ driver.Driver.dateOfBirth.split("-").reverse().join(".") }}
+        </div>
+      </li>
+    </ul>
+  </div>
+</a>

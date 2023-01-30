@@ -1,0 +1,22 @@
+.standing-desc {
+  margin-bottom: 3rem;
+  font-size: 5rem;
+}
+
+.standings-table {
+  border-spacing: 0;
+  font-size: 2rem;
+}
+
+.standings-table th,
+.standings-table td {
+  text-align: start;
+  padding: 2rem 6rem 2rem 3rem;
+}
+
+.standings-table tbody tr:nth-child(odd) {
+  background-color: #ddd;
+}
+.standings-table tbody tr:nth-child(even) {
+  background-color: #eee;
+}

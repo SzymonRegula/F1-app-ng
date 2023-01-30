@@ -1,0 +1,23 @@
+<div class="drivers-standings">
+  <p class="standing-desc">Drivers</p>
+  <table class="standings-table">
+    <thead>
+      <tr>
+        <th>POS</th>
+        <th>DRIVER</th>
+        <th>CAR</th>
+        <th>PTS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="constructor-row" *ngFor="let driver of driverStandings">
+        <td>{{ driver.position }}</td>
+        <td class="team-cell">
+          {{ driver.Driver.givenName }} {{ driver.Driver.familyName }}
+        </td>
+        <td>{{ driver.Constructors[0]?.name ?? "No team data" }}</td>
+        <td>{{ driver.points }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

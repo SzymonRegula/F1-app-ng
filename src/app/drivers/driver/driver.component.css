@@ -1,0 +1,79 @@
+.driver-card-link:link,
+.driver-card-link:visited {
+  text-decoration: none;
+  color: #111;
+}
+
+.driver-card {
+  margin-top: 1rem;
+  position: relative;
+  padding: 1rem 1rem 1rem 0;
+  padding-bottom: 0;
+  border-top: 0.2rem solid #111;
+  border-right: 0.2rem solid #111;
+  border-top-right-radius: 1rem;
+  transition: all 0.2s;
+}
+
+.driver-card:hover {
+  margin-top: 0;
+  padding-top: 2rem;
+}
+
+.driver-info-list {
+  list-style: none;
+}
+
+.name {
+  font-size: 2rem;
+}
+.surname {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.driver-number {
+  margin-right: 1rem;
+  color: #bbb;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.driver-name-number {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.driver-team {
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.car-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.driver-nat {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.birth-date {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

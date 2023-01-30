@@ -1,0 +1,22 @@
+<div class="constructor-standings">
+  <p class="standing-desc">Constructors</p>
+  <table class="standings-table">
+    <thead>
+      <tr>
+        <th>POS</th>
+        <th>TEAM</th>
+        <th>PTS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="constructor-row"
+        *ngFor="let constructor of constructorStandings"
+      >
+        <td>{{ constructor.position }}</td>
+        <td class="team-cell">{{ constructor.Constructor.name }}</td>
+        <td>{{ constructor.points }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
